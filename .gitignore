@@ -1,0 +1,5 @@
+.streamlit/*
+venv
+old_code/*
+__pycache__/
+old_code
