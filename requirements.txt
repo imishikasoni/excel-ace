@@ -1,5 +1,4 @@
 litellm
 python-dotenv
-chromadb==0.0.0
-crewai
+crewai==0.186.1
 
