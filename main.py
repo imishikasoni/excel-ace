@@ -1,8 +1,6 @@
 import streamlit as st
 from src_crewai.interview_simulation import InterviewSimulation
-__import__("pysqlite3")
-import sys                                     
-sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")       
+     
 # --- Page config ---
 st.set_page_config(page_title="AI-Powered Excel Mock Interviewer", layout="wide")
 
