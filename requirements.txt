@@ -2,5 +2,4 @@ litellm
 python-dotenv
 crewai==0.177.0
 streamlit
-pysqlite3-binary==0.5.3
 
