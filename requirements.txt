@@ -1,5 +1,4 @@
 litellm
 python-dotenv
 crewai==0.177.0
-pysqlite3-binary==0.5.4
-chromadb==1.1.0
+streamlit
