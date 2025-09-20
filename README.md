@@ -15,7 +15,7 @@ AI-Powered Excel Mock Interviewer for Data Analyst, Financial Analyst, and Opera
 
 1. **Clone the repository:**
    ```sh
-   git clone <your-repo-url>
+   git clone https://github.com/imishikasoni/excel-ace/
    cd excel-ace
    ```
 
