@@ -1,5 +1,4 @@
 litellm
 python-dotenv
 crewai==0.193.0
-pysqlite3
 
