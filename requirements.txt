@@ -1,5 +1,5 @@
 litellm
 python-dotenv
-chromadb
+chromadb==0.0.0
 crewai
 
