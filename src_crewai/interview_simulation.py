@@ -120,26 +120,26 @@ class InterviewSimulation:
     # -------------------------
     # Persistence
     # -------------------------
-    def save_results(self, path: str = ".", prefix: str = "interview_results") -> str:
-        """
-        Save the current interview_results (must be populated via run() or evaluate())
-        to a JSON file. Returns the filename.
-        """
-        if not self.interview_results:
-            raise ValueError("No interview results to save. Run an interview or call evaluate() first.")
+    # def save_results(self, path: str = ".", prefix: str = "interview_results") -> str:
+    #     """
+    #     Save the current interview_results (must be populated via run() or evaluate())
+    #     to a JSON file. Returns the filename.
+    #     """
+    #     if not self.interview_results:
+    #         raise ValueError("No interview results to save. Run an interview or call evaluate() first.")
 
-        os.makedirs(path, exist_ok=True)
-        ts = datetime.now().strftime("%Y%m%d_%H%M%S")
-        filename = f"interview_results/{prefix}_{self.job_title.replace(' ', '_')}_{ts}.json"
-        filepath = os.path.join(path, filename)
+    #     os.makedirs(path, exist_ok=True)
+    #     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+    #     filename = f"interview_results/{prefix}_{self.job_title.replace(' ', '_')}_{ts}.json"
+    #     filepath = os.path.join(path, filename)
 
-        payload = {
-            "job_title": self.job_title,
-            "interview_date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-            "results": self.interview_results
-        }
+    #     payload = {
+    #         "job_title": self.job_title,
+    #         "interview_date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+    #         "results": self.interview_results
+    #     }
 
-        with open(filepath, "w", encoding="utf-8") as f:
-            json.dump(payload, f, indent=2, ensure_ascii=False)
+    #     with open(filepath, "w", encoding="utf-8") as f:
+    #         json.dump(payload, f, indent=2, ensure_ascii=False)
 
-        return filepath
+    #     return filepath
