@@ -1,6 +1,8 @@
 import streamlit as st
-from interview_simulation import InterviewSimulation
-
+from src_crewai.interview_simulation import InterviewSimulation
+__import__("pysqlite3")
+import sys                                     
+sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")       
 # --- Page config ---
 st.set_page_config(page_title="AI-Powered Excel Mock Interviewer", layout="wide")
 
@@ -125,7 +127,7 @@ if st.session_state.finished:
     st.markdown(f'<div class="evaluation-box">{evaluation}</div>', unsafe_allow_html=True)
     
     # Save results
-    filename = simulation.save_results()
+    # filename = simulation.save_results()
 
     # Start new interview button
     if st.button("🔄 Start New Interview"):
