@@ -58,7 +58,7 @@ st.markdown("""
 
 # --- Header ---
 st.markdown('<div class="header-box"><h2 style="color:white;">🧑‍💼 AI-Powered Excel Mock Interviewer</h2>'
-            '<p>Practice Excel interview questions for Data/Finance/Operations roles.</p></div>',
+            '<p>Interview for Data/Finance/Operations roles.</p></div>',
             unsafe_allow_html=True)
 
 # --- Sidebar ---
